@@ -1,0 +1,434 @@
+* {
+    font-family: $roboto;
+}
+
+.title {
+    font-size: 3em;
+    color: $darkblue;
+    text-align: center;
+}
+
+.whitetitle {
+    color: white;
+    font-size: 3em;
+    text-align: center;
+}
+
+.content,
+ul {
+    width: 100%;
+    line-height: 2em;
+    color: $textdark;
+}
+////////////////////////////////////////////////////////////////////
+
+.hero {
+    background-image: url("img/actilist/herobg.png");
+    width: 100%;
+    display: block;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    height: 800px;
+    position: relative;
+}
+
+#herophonediv {
+    width: 15%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#herophone {
+    width: 100%;
+}
+
+.intro {
+    background-color: #2D2D2D;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.logodiv {
+    margin: 10em 0;
+    min-width: 300px;
+    padding: 3em 0;
+    position: relative;
+}
+
+.blurbdiv {
+    width: 30%;
+    padding: 1em 0;
+    margin: 10em 0;
+    position: relative;
+}
+
+#blurb {
+    font-size: 30px;
+    color: white;
+    width: 100%;
+}
+///////////////////////////////////////////////////////////////////////////////
+
+.rolecontainer {
+    background-color: #424242;
+    padding-left: 5em;
+}
+
+.roleflex {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.roleitem {
+    width: 33%;
+    margin: 2em 0;
+}
+
+.roletitle {
+    color: #A0A0A0;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.rolebody {
+    color: #ECECEC;
+    font-size: 24px;
+    width: 80%;
+    margin: 1em auto;
+}
+///////////////////////////////////////////////////////////////////////////////
+
+.whatbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 8em 0;
+}
+
+.whatcontentdiv {
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#whatphonediv {
+    width: 30%;
+}
+
+.whatphone {
+    width: 100%;
+}
+
+.whattitle {
+    width: 100%;
+    padding-left: 1em;
+}
+
+.whatcontent {
+    padding-left: 2em;
+}
+///////////////////////////////////////////////////////////////////////////////
+
+.previewcontainer {
+    background-color: $bgblue;
+
+    p {
+        color: white;
+    }
+
+    .title {
+        text-align: left;
+        color: white;
+    }
+}
+
+.previewgroup {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 8em 0;
+    align-items: center;
+}
+
+.previewcontentdiv {
+    width: 40%;
+    background-image: url("img/actilist/introcontentbg.png");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+.prevphonediv {
+    width: 30%;
+}
+
+.leftprevphone {
+    padding-left: 4em;
+}
+
+.previewtitle {
+    width: 100%;
+    padding: 1em 0 0 1em;
+}
+
+.previewcontent {
+    padding: 2em 0 0 2em;
+    width: 70%;
+}
+/////////////////////////// BACKGND ////////////////////////
+
+#backcontainer {
+    background-color: black;
+    padding: 4em 0;
+
+    p {
+        color: white;
+    }
+
+    .contentdiv {
+        padding-top: 4em;
+        width: 30%;
+        margin: 0 auto;
+    }
+}
+/////////////////////////// RESEARCH ////////////////////////
+
+#researchcontainer {
+    background-color: $grey1;
+    padding: 4em 0;
+
+    .contentdiv {
+        padding-top: 4em;
+        width: 30%;
+        margin: 0 auto;
+    }
+
+    #percentagediv {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 8em 0;
+
+        .percentageimg {
+            width: 13%;
+            margin: 0 auto;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    #quotediv {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 4em 0;
+
+        .quote {
+            width: 27%;
+            font-size: 1.5em;
+            font-weight: 400;
+            font-style: italic;
+            color: #00936E;
+        }
+    }
+}
+/////////////////////////// WIREFRAMES //////////////////////// -->
+
+#wireframescontainer {
+    background-color: white;
+    padding: 4em 0;
+
+    .contentdiv {
+        padding-top: 4em;
+        width: 30%;
+        margin: 0 auto;
+    }
+
+    #wireframegroupsmall {
+        padding: 8em 0;
+
+        .wfdiv {
+            width: 90%;
+            margin: 0 auto;
+            padding: 4em 0;
+        }
+    }
+
+    #wireframegroupbig {
+        .wfgp {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 4em 0;
+
+            img {
+                padding: 2em;
+            }
+        }
+    }
+}
+//////////////////////// VISUAL DESIGN  //////////////////////
+
+#visualcontainer {
+    background-color: $grey1;
+    padding: 4em 0;
+
+    .contentdiv {
+        padding-top: 4em;
+        width: 30%;
+        margin: 0 auto;
+    }
+
+    #colorsdiv {
+        width: 60%;
+        margin: 0 auto;
+        padding: 8em 0;
+    }
+
+    #typebuttdiv {
+        padding: 4em 0;
+        display: flex;
+        width: 75%;
+        margin: 0 auto;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+}
+////////////////////////// HIGH FIDELITY ////////////////////////
+
+#hificontainer {
+    background-color: $actilistred;
+    padding: 4em 0;
+
+    .contentdiv {
+        padding-top: 4em;
+        width: 30%;
+        margin: 0 auto;
+
+        p {
+            color: white;
+        }
+    }
+
+    #hifimockgroupbox {
+        padding: 8em 0;
+    }
+
+    .hifigroupdiv {
+        display: flex;
+        flex-wrap: wrap;
+        width: 85%;
+        margin: 0 auto;
+        justify-content: space-around;
+
+        .hfgp {
+            padding: 2em 0;
+        }
+    }
+}
+/////////////////////////// BENEFITS ////////////////////////
+
+#benefitscontainer {
+    display: flex;
+    flex-wrap: wrap;
+
+    .colorcontentdiv {
+        padding-top: 4em;
+        background-color: #FFFABC;
+        width: 50%;
+
+        .contentdiv {
+            padding: 10em 0;
+            width: 50%;
+            margin: 0 auto;
+        }
+    }
+
+    #benefitsimagediv {
+        width: 50%;
+        background-color: $grey1;
+        position: relative;
+
+        .nakedscreendiv {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}
+/////////////////////////// REFLECTIONS ////////////////////////
+
+#reflectioncontainer {
+    padding: 4em 0;
+
+    #reflectionflex {
+        padding-top: 8em;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    #blackphonebox {
+        width: 50%;
+        margin: 0 auto;
+
+        #blackphonediv {
+            margin: 0 auto;
+            width: 40%;
+        }
+    }
+
+    .refcontentdiv {
+        width: 50%;
+    }
+
+    .refcontent {
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+/////////////////////////// BEYOND ////////////////////////
+
+#beyondcontainer {
+    display: flex;
+    flex-wrap: wrap;
+
+    p {
+        color: white;
+    }
+
+    .beyondcontentdiv {
+        padding-top: 4em;
+        background-color: $bgblue;
+        width: 50%;
+
+        .contentdiv {
+            padding: 10em 0;
+            width: 50%;
+            margin: 0 auto;
+        }
+    }
+
+    #benefitsimagediv {
+        width: 50%;
+        background-color: black;
+
+        .nakedscreendiv {
+            position: relative;
+            margin: 0 auto;
+            width: 50%;
+            top: 20%;
+        }
+    }
+}

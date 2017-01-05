@@ -557,7 +557,8 @@ p {
 #mushdidiv {
   margin: 0 auto;
   width: 60%;
-  margin-bottom: 4em; }
+  margin-bottom: 4em;
+  padding-top: 4em; }
   @media (min-width: 400px) and (max-width: 768px) {
     #mushdidiv {
       padding-top: 4em;
@@ -673,6 +674,32 @@ p {
 #skillslap {
   width: 100%; }
 
+.random {
+  display: flex;
+  flex-wrap: wrap;
+  height: 800px;
+  background-color: blue; }
+
+.one {
+  height: 300px;
+  width: 40%;
+  background-color: red; }
+
+.two {
+  height: 300px;
+  width: 40%;
+  background-color: green; }
+
+.container,
+body,
+html {
+  height: 100%;
+  width: 100%; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
 .footerdiv {
   background-color: #292929;
   width: 100%; }
@@ -745,13 +772,5 @@ p {
     .copyright {
       padding: 0.8em 0 0.8em 10em;
       text-align: left; } }
-
-html, body, .container {
-  height: 100%;
-  width: 100%; }
-
-* {
-  margin: 0;
-  padding: 0; }
 
 /*# sourceMappingURL=homepage.css.map */

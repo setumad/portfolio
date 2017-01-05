@@ -1,0 +1,394 @@
+* {
+  font-family: "Roboto", sans-serif; }
+
+.title {
+  font-size: 3em;
+  color: #183161;
+  text-align: center; }
+
+.whitetitle {
+  color: white;
+  font-size: 3em;
+  text-align: center; }
+
+.content,
+ul {
+  width: 100%;
+  line-height: 2em;
+  color: #313131; }
+
+.hero {
+  background-image: url("img/actilist/herobg.png");
+  width: 100%;
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  height: 800px;
+  position: relative; }
+
+#herophonediv {
+  width: 15%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%); }
+
+#herophone {
+  width: 100%; }
+
+.intro {
+  background-color: #2D2D2D;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center; }
+
+.logodiv {
+  margin: 10em 0;
+  min-width: 300px;
+  padding: 3em 0;
+  position: relative; }
+
+.blurbdiv {
+  width: 30%;
+  padding: 1em 0;
+  margin: 10em 0;
+  position: relative; }
+
+#blurb {
+  font-size: 30px;
+  color: white;
+  width: 100%; }
+
+.rolecontainer {
+  background-color: #424242;
+  padding-left: 5em; }
+
+.roleflex {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+  margin: 0 auto; }
+
+.roleitem {
+  width: 33%;
+  margin: 2em 0; }
+
+.roletitle {
+  color: #A0A0A0;
+  width: 80%;
+  margin: 0 auto; }
+
+.rolebody {
+  color: #ECECEC;
+  font-size: 24px;
+  width: 80%;
+  margin: 1em auto; }
+
+.whatbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 8em 0; }
+
+.whatcontentdiv {
+  width: 30%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; }
+
+#whatphonediv {
+  width: 30%; }
+
+.whatphone {
+  width: 100%; }
+
+.whattitle {
+  width: 100%;
+  padding-left: 1em; }
+
+.whatcontent {
+  padding-left: 2em; }
+
+.previewcontainer {
+  background-color: #3F97F9; }
+  .previewcontainer p {
+    color: white; }
+  .previewcontainer .title {
+    text-align: left;
+    color: white; }
+
+.previewgroup {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 8em 0;
+  align-items: center; }
+
+.previewcontentdiv {
+  width: 40%;
+  background-image: url("img/actilist/introcontentbg.png");
+  background-repeat: no-repeat;
+  background-attachment: scroll; }
+
+.prevphonediv {
+  width: 30%; }
+
+.leftprevphone {
+  padding-left: 4em; }
+
+.previewtitle {
+  width: 100%;
+  padding: 1em 0 0 1em; }
+
+.previewcontent {
+  padding: 2em 0 0 2em;
+  width: 70%; }
+
+#backcontainer {
+  background-color: black;
+  padding: 4em 0; }
+  #backcontainer p {
+    color: white; }
+  #backcontainer .contentdiv {
+    padding-top: 4em;
+    width: 30%;
+    margin: 0 auto; }
+
+#researchcontainer {
+  background-color: #EEEEEE;
+  padding: 4em 0; }
+  #researchcontainer .contentdiv {
+    padding-top: 4em;
+    width: 30%;
+    margin: 0 auto; }
+  #researchcontainer #percentagediv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 8em 0; }
+    #researchcontainer #percentagediv .percentageimg {
+      width: 13%;
+      margin: 0 auto; }
+      #researchcontainer #percentagediv .percentageimg img {
+        width: 100%; }
+  #researchcontainer #quotediv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 4em 0; }
+    #researchcontainer #quotediv .quote {
+      width: 27%;
+      font-size: 1.5em;
+      font-weight: 400;
+      font-style: italic;
+      color: #00936E; }
+
+#wireframescontainer {
+  background-color: white;
+  padding: 4em 0; }
+  #wireframescontainer .contentdiv {
+    padding-top: 4em;
+    width: 30%;
+    margin: 0 auto; }
+  #wireframescontainer #wireframegroupsmall {
+    padding: 8em 0; }
+    #wireframescontainer #wireframegroupsmall .wfdiv {
+      width: 90%;
+      margin: 0 auto;
+      padding: 4em 0; }
+  #wireframescontainer #wireframegroupbig .wfgp {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 4em 0; }
+    #wireframescontainer #wireframegroupbig .wfgp img {
+      padding: 2em; }
+
+#visualcontainer {
+  background-color: #EEEEEE;
+  padding: 4em 0; }
+  #visualcontainer .contentdiv {
+    padding-top: 4em;
+    width: 30%;
+    margin: 0 auto; }
+  #visualcontainer #colorsdiv {
+    width: 60%;
+    margin: 0 auto;
+    padding: 8em 0; }
+  #visualcontainer #typebuttdiv {
+    padding: 4em 0;
+    display: flex;
+    width: 75%;
+    margin: 0 auto;
+    justify-content: space-around;
+    flex-wrap: wrap; }
+
+#hificontainer {
+  background-color: #EC5454;
+  padding: 4em 0; }
+  #hificontainer .contentdiv {
+    padding-top: 4em;
+    width: 30%;
+    margin: 0 auto; }
+    #hificontainer .contentdiv p {
+      color: white; }
+  #hificontainer #hifimockgroupbox {
+    padding: 8em 0; }
+  #hificontainer .hifigroupdiv {
+    display: flex;
+    flex-wrap: wrap;
+    width: 85%;
+    margin: 0 auto;
+    justify-content: space-around; }
+    #hificontainer .hifigroupdiv .hfgp {
+      padding: 2em 0; }
+
+#benefitscontainer {
+  display: flex;
+  flex-wrap: wrap; }
+  #benefitscontainer .colorcontentdiv {
+    padding-top: 4em;
+    background-color: #FFFABC;
+    width: 50%; }
+    #benefitscontainer .colorcontentdiv .contentdiv {
+      padding: 10em 0;
+      width: 50%;
+      margin: 0 auto; }
+  #benefitscontainer #benefitsimagediv {
+    width: 50%;
+    background-color: #EEEEEE;
+    position: relative; }
+    #benefitscontainer #benefitsimagediv .nakedscreendiv {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%); }
+
+#reflectioncontainer {
+  padding: 4em 0; }
+  #reflectioncontainer #reflectionflex {
+    padding-top: 8em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+  #reflectioncontainer #blackphonebox {
+    width: 50%;
+    margin: 0 auto; }
+    #reflectioncontainer #blackphonebox #blackphonediv {
+      margin: 0 auto;
+      width: 40%; }
+  #reflectioncontainer .refcontentdiv {
+    width: 50%; }
+  #reflectioncontainer .refcontent {
+    width: 50%;
+    margin: 0 auto; }
+
+#beyondcontainer {
+  display: flex;
+  flex-wrap: wrap; }
+  #beyondcontainer p {
+    color: white; }
+  #beyondcontainer .beyondcontentdiv {
+    padding-top: 4em;
+    background-color: #3F97F9;
+    width: 50%; }
+    #beyondcontainer .beyondcontentdiv .contentdiv {
+      padding: 10em 0;
+      width: 50%;
+      margin: 0 auto; }
+  #beyondcontainer #benefitsimagediv {
+    width: 50%;
+    background-color: black; }
+    #beyondcontainer #benefitsimagediv .nakedscreendiv {
+      position: relative;
+      margin: 0 auto;
+      width: 50%;
+      top: 20%; }
+
+.container,
+body,
+html {
+  height: 100%;
+  width: 100%; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+.footerdiv {
+  background-color: #292929;
+  width: 100%; }
+
+.getintouch {
+  color: white;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1em;
+  padding: 2em 0;
+  text-align: center; }
+  @media (min-width: 400px) and (max-width: 768px) {
+    .getintouch {
+      font-size: 1.5em; } }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .getintouch {
+      font-size: 1.5em;
+      text-align: center; } }
+  @media (min-width: 1024px) and (max-width: 1439px) {
+    .getintouch {
+      font-size: 1.5em; } }
+  @media (min-width: 1440px) and (max-width: 1819px) {
+    .getintouch {
+      font-size: 1.5em; } }
+  @media (min-width: 1820px) {
+    .getintouch {
+      font-size: 1.5em; } }
+
+.iconsflex {
+  display: flex;
+  flex-wrap: wrap; }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .iconsflex {
+      display: inline-block; } }
+
+.iconsgroup {
+  margin: 0 auto;
+  width: 200px; }
+
+.icons {
+  padding: 2em;
+  margin-bottom: 2em; }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .icons {
+      padding: 0 2em; } }
+
+.resumeline {
+  color: white;
+  margin: 0;
+  text-align: center;
+  font-size: 1em; }
+  .resumeline #resume {
+    color: #D92A1C; }
+
+.arrowup {
+  width: 50px;
+  margin: 0 auto;
+  padding: 2em 0 3em; }
+
+.copyrightdiv {
+  width: 100%;
+  background-color: #3E3E3E; }
+
+.copyright {
+  padding: 0.8em 0;
+  text-align: center;
+  color: #ABABAB;
+  font-size: 0.8em;
+  margin: 0 auto; }
+  @media (min-width: 1024px) and (max-width: 1439px) {
+    .copyright {
+      padding: 0.8em 0 0.8em 10em;
+      text-align: left; } }
+
+/*# sourceMappingURL=actilist.css.map */

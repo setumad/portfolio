@@ -3,7 +3,22 @@
 }
 
 .title {
-    font-size: 3em;
+    font-size: 2em;
+    @media #{$phablet} {
+        font-size: 2.5em;
+    }
+    @media #{$tablet} {
+        font-size: 3em;
+    }
+    @media #{$mac13} {
+        font-size: 3em;
+    }
+    @media #{$mac15} {
+        font-size: 3em;
+    }
+    @media #{$monitor} {
+        font-size: 3em;
+    }
     color: $darkblue;
     text-align: center;
 }
@@ -16,9 +31,29 @@
 
 .content,
 ul {
-    width: 100%;
+    width: 90%;
     line-height: 2em;
     color: $textdark;
+    margin: 0 auto;
+    @media #{$phablet} {
+        width: 100%;
+    }
+    @media #{$tablet} {
+        width: 100%;
+    }
+    @media #{$mac13} {
+        width: 70%;
+        margin: 0 auto;
+    }
+    @media #{$mac15} {
+        width: 65%;
+        margin: 0 auto;
+    }
+    @media #{$monitor} {
+        width: 75%;
+        margin: 0 auto;
+        font-size: 1.2em;
+    }
 }
 ////////////////////////////////////////////////////////////////////
 
@@ -30,114 +65,349 @@ ul {
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: scroll;
-    height: 800px;
+    height: 400px;
     position: relative;
+    @media #{$phablet} {
+        height: 600px;
+    }
+    @media #{$tablet} {
+        height: 800px;
+    }
+    @media #{$mac13} {
+        height: 600px;
+    }
+    @media #{$mac15} {
+        height: 600px;
+    }
+    @media #{$monitor} {
+        height: 800px;
+    }
 }
 
 #herophonediv {
-    width: 15%;
+    width: 45%;
     position: absolute;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+    @media #{$phablet} {
+        width: 45%;
+    }
+    @media #{$tablet} {
+        width: 25%;
+    }
+    @media #{$mac13} {
+        width: 20%;
+    }
+    @media #{$mac15} {
+        width: 20%;
+    }
+    @media #{$monitor} {
+        width: 15%;
+    }
 }
 
 #herophone {
     width: 100%;
 }
+//////////////////////////// INTRO //////////////////////////
+
+.introcontainer {
+    background-color: #2D2D2D;
+}
 
 .intro {
-    background-color: #2D2D2D;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    align-items: center;
+    @media #{$tablet} {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    @media #{$mac13} {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    @media #{$mac15} {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    @media #{$monitor} {
+        display: flex;
+        width: 70%;
+        margin: 0 auto;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: center;
+    }
 }
 
 .logodiv {
-    margin: 10em 0;
-    min-width: 300px;
-    padding: 3em 0;
-    position: relative;
+    width: 265px;
+    margin: 0 auto;
+    padding-top: 4em;
+    @media #{$tablet} {
+        width: 265px;
+        padding: 3em 0;
+        position: relative;
+    }
+    @media #{$mac13} {
+        width: 265px;
+        padding: 3em 0;
+        position: relative;
+    }
+    @media #{$mac15} {
+        width: 265px;
+        padding: 3em 0;
+        position: relative;
+    }
+    @media #{$monitor} {
+        width: 265px;
+        padding: 3em 0;
+        position: relative;
+    }
 }
 
 .blurbdiv {
-    width: 30%;
-    padding: 1em 0;
-    margin: 10em 0;
-    position: relative;
+    width: 90%;
+    padding: 8em 0;
+    margin: 0 auto;
+    @media #{$tablet} {
+        width: 50%;
+        padding: 2em;
+        margin: 10em 0;
+        position: relative;
+    }
+    @media #{$mac13} {
+        width: 50%;
+        padding: 2em;
+        margin: 10em 0;
+        position: relative;
+    }
+    @media #{$mac15} {
+        width: 50%;
+        padding: 2em;
+        margin: 10em 0;
+        position: relative;
+    }
+    @media #{$monitor} {
+        width: 50%;
+        padding: 2em;
+        margin: 10em 0;
+        position: relative;
+    }
 }
 
 #blurb {
-    font-size: 30px;
+    font-size: 1.5em;
     color: white;
     width: 100%;
+    @media #{$mac15} {
+        font-size: 2em;
+        width: 80%;
+    }
+    @media #{$monitor} {
+        font-size: 2em;
+        width: 70%;
+        margin: 0 auto;
+    }
 }
-///////////////////////////////////////////////////////////////////////////////
+//////////////////////////////ROLE/////////////////////////////////////
 
 .rolecontainer {
     background-color: #424242;
-    padding-left: 5em;
 }
 
 .roleflex {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: space-around;
-    margin: 0 auto;
+    padding: 2em 0 4em 1em;
+    @media #{$phablet} {
+        padding: 2em 0 4em 2em;
+    }
+    @media #{$tablet} {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-around;
+        margin: 0 auto;
+    }
+    @media #{$mac13} {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-around;
+        margin: 0 auto;
+    }
+    @media #{$mac15} {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-around;
+        margin: 0 auto;
+    }
+    @media #{$monitor} {
+        display: flex;
+        flex-wrap: wrap;
+        width: 70%;
+        justify-content: space-around;
+        margin: 0 auto;
+    }
 }
 
 .roleitem {
-    width: 33%;
-    margin: 2em 0;
+    @media #{$tablet} {
+        width: 33%;
+        margin: 2em 0;
+    }
 }
 
 .roletitle {
     color: #A0A0A0;
-    width: 80%;
-    margin: 0 auto;
+    padding-top: 2em;
+    @media #{$tablet} {
+        width: 80%;
+        margin: 0 auto;
+    }
+    @media #{$mac13} {
+        width: 80%;
+        margin: 0 auto;
+    }
+    @media #{$mac15} {
+        width: 80%;
+    }
+    @media #{$monitor} {
+        width: 80%;
+    }
 }
 
 .rolebody {
     color: #ECECEC;
-    font-size: 24px;
-    width: 80%;
-    margin: 1em auto;
+    font-size: 1.4em;
+    width: 90%;
+    @media #{$tablet} {
+        font-size: 1.4em;
+        width: 80%;
+        margin: 1em auto;
+    }
+    @media #{$mac13} {
+        font-size: 1.4em;
+        width: 80%;
+        margin: 1em auto;
+    }
+    @media #{$mac15} {
+        font-size: 1.4em;
+        width: 100%;
+        margin: 1em auto;
+    }
+    @media #{$monitor} {
+        font-size: 1.4em;
+        width: 100%;
+        margin: 1em auto;
+    }
 }
-///////////////////////////////////////////////////////////////////////////////
+//////////////////////////////WHAT////////////////////////////////////////
 
 .whatbox {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 8em 0;
+    padding-bottom: 4em;
+    @media #{$monitor} {
+        width: 80%;
+        margin: 0 auto;
+    }
 }
 
 .whatcontentdiv {
-    width: 30%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+    width: 100%;
+    padding: 4em 0;
+    @media #{$mac13} {
+        width: 50%;
+        padding: 8em 0;
+    }
+    @media #{$mac15} {
+        width: 50%;
+        padding: 8em 0;
+    }
+    @media #{$monitor} {
+        width: 50%;
+        padding: 8em 0;
+    }
+
+    .contentdiv {
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 4em;
+        @media #{$phablet} {
+            width: 70%;
+            margin: 0 auto;
+        }
+        @media #{$tablet} {
+            width: 50%;
+            margin: 0 auto;
+        }
+        @media #{$monitor} {
+            width: 50%;
+            margin: 0 auto;
+        }
+    }
 }
 
-#whatphonediv {
-    width: 30%;
+.whatphonediv {
+    width: 100%;
+    @media #{$mac13} {
+        width: 50%;
+    }
+    @media #{$mac15} {
+        width: 50%;
+    }
+    @media #{$monitor} {
+        width: 50%;
+    }
+
+    #phonediv {
+        width: 70%;
+        margin: 0 auto;
+        @media #{$phablet} {
+            width: 60%;
+            margin: 0 auto;
+        }
+        @media #{$phablet} {
+            width: 40%;
+            margin: 0 auto;
+        }
+        @media #{$mac13} {
+            width: 50%;
+            margin: 0 auto;
+            padding: 10em 0;
+        }
+        @media #{$mac15} {
+            width: 35%;
+            margin: 0 auto;
+            padding: 8em 0;
+        }
+        @media #{$mac15} {
+            width: 35%;
+            margin: 0 auto;
+            padding: 8em 0;
+        }
+        @media #{$monitor} {
+            width: 35%;
+            margin: 0 auto;
+            padding: 8em 0;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
 }
 
-.whatphone {
+#whatphone {
     width: 100%;
 }
-
-.whattitle {
-    width: 100%;
-    padding-left: 1em;
-}
-
-.whatcontent {
-    padding-left: 2em;
-}
-///////////////////////////////////////////////////////////////////////////////
+//////////////////////////////PREVIEW////////////////////////////////////
 
 .previewcontainer {
     background-color: $bgblue;
@@ -149,6 +419,21 @@ ul {
     .title {
         text-align: left;
         color: white;
+        @media #{$tablet} {
+            font-size: 1.5em;
+        }
+        @media #{$mac13} {
+            font-size: 1.5em;
+            text-align: left;
+        }
+        @media #{$mac15} {
+            font-size: 1.5em;
+            text-align: left;
+        }
+        @media #{$monitor} {
+            font-size: 1.5em;
+            text-align: left;
+        }
     }
 }
 
@@ -156,33 +441,94 @@ ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 8em 0;
     align-items: center;
+    padding: 4em 0;
+    @media #{$tablet} {
+        padding: 0;
+        width: 96%;
+    }
+    margin: 0 auto;
+    @media #{$monitor} {
+        padding: 0;
+        width: 70%;
+        margin: 0 auto;
+    }
 }
 
 .previewcontentdiv {
-    width: 40%;
-    background-image: url("img/actilist/introcontentbg.png");
-    background-repeat: no-repeat;
-    background-attachment: scroll;
+    width: 90%;
+    margin: 0 auto;
+    order: 1;
+    @media #{$tablet} {
+        order: 2;
+        width: 40%;
+        margin: 0 auto;
+    }
+    @media #{$mac13} {
+        order: 2;
+        width: 40%;
+        margin: 0 auto;
+    }
+    @media #{$mac15} {
+        order: 2;
+        width: 40%;
+        margin: 0 auto;
+    }
+    @media #{$monitor} {
+        order: 2;
+        width: 30%;
+        margin: 0 auto;
+    }
+    border-width: 1px;
+    border-style: solid;
+    border-image: linear-gradient(to bottom, white, rgba(0, 0, 0, 0)) 0.5 0.5%;
 }
 
 .prevphonediv {
-    width: 30%;
+    order: 2;
+    width: 256px;
+    margin: 0 auto;
+    padding: 4em 0 8em;
+    @media #{$mac13} {
+        width: 256px;
+        margin: 0 auto;
+    }
 }
 
-.leftprevphone {
-    padding-left: 4em;
+.followphone {
+    width: 90%;
+    margin: 0 auto;
+    @media #{$tablet} {
+        width: 50%;
+    }
+    @media #{$mac13} {
+        width: 45%;
+    }
+    @media #{$mac15} {
+        width: 45%;
+    }
+    @media #{$monitor} {
+        width: 45%;
+    }
 }
 
 .previewtitle {
     width: 100%;
     padding: 1em 0 0 1em;
+    font-weight: 600;
 }
 
 .previewcontent {
     padding: 2em 0 0 2em;
-    width: 70%;
+    width: 100%;
+    @media #{$tablet} {
+        width: 90%;
+        padding: 2em 0 0 1.5em;
+    }
+    @media #{$monitor} {
+        width: 90%;
+        padding: 2em 0 0 0.5em;
+    }
 }
 /////////////////////////// BACKGND ////////////////////////
 
@@ -190,37 +536,112 @@ ul {
     background-color: black;
     padding: 4em 0;
 
+    #backgroundbox {
+        @media #{$monitor} {
+            width: 70%;
+            margin: 0 auto;
+        }
+    }
+
     p {
         color: white;
     }
 
     .contentdiv {
         padding-top: 4em;
-        width: 30%;
+        width: 90%;
         margin: 0 auto;
+        @media #{$phablet} {
+            width: 75%;
+        }
+        @media #{$tablet} {
+            width: 55%;
+        }
+        @media #{$mac13} {
+            width: 45%;
+        }
+        @media #{$mac15} {
+            width: 35%;
+        }
+        @media #{$monitor} {
+            width: 45%;
+        }
     }
 }
 /////////////////////////// RESEARCH ////////////////////////
 
 #researchcontainer {
     background-color: $grey1;
-    padding: 4em 0;
+    width: 100%;
+}
 
-    .contentdiv {
-        padding-top: 4em;
-        width: 30%;
+#researchbox {
+    padding: 4em 0;
+    @media #{$monitor} {
+        width: 70%;
         margin: 0 auto;
     }
 
+    .contentdiv {
+        padding-top: 4em;
+        width: 90%;
+        margin: 0 auto;
+        @media #{$phablet} {
+            width: 75%;
+        }
+        @media #{$tablet} {
+            width: 60%;
+        }
+        @media #{$mac13} {
+            width: 40%;
+        }
+        @media #{$mac15} {
+            width: 35%;
+        }
+        @media #{$monitor} {
+            width: 25%;
+        }
+    }
+
     #percentagediv {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        padding: 8em 0;
+        width: 50%;
+        margin: 0 auto;
+        padding: 4em 0;
+        @media #{$tablet} {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 4em 0;
+            width: 90%;
+        }
+        @media #{$mac13} {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 4em 0;
+            width: 90%;
+        }
+        @media #{$mac15} {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 4em 0;
+            width: 70%;
+        }
+        @media #{$monitor} {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 4em 0;
+            width: 70%;
+        }
 
         .percentageimg {
-            width: 13%;
-            margin: 0 auto;
+            padding: 2em 0;
+            @media #{$tablet} {
+                width: 23%;
+                margin: 0 auto;
+            }
 
             img {
                 width: 100%;
@@ -229,17 +650,45 @@ ul {
     }
 
     #quotediv {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        padding: 4em 0;
+        width: 90%;
+        margin: 0 auto;
+        @media #{$tablet} {
+            width: 65%;
+            margin: 0 auto;
+        }
+        @media #{$mac13} {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        @media #{$mac15} {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        @media #{$monitor} {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
 
         .quote {
-            width: 27%;
             font-size: 1.5em;
             font-weight: 400;
             font-style: italic;
             color: #00936E;
+            padding: 4em 0;
+            text-align: center;
+            @media #{$mac13} {
+                width: 40%;
+            }
+            @media #{$mac15} {
+                width: 30%;
+            }
+            @media #{$monitor} {
+                width: 20%;
+                font-size: 2em;
+            }
         }
     }
 }
@@ -247,16 +696,40 @@ ul {
 
 #wireframescontainer {
     background-color: white;
-    padding: 4em 0 8em;
+}
 
-    .contentdiv {
-        padding-top: 4em;
-        width: 30%;
+#wireframesbox {
+    padding: 4em 0 8em;
+    @media #{$monitor} {
+        width: 70%;
         margin: 0 auto;
     }
 
+    .contentdiv {
+        padding-top: 4em;
+        width: 90%;
+        margin: 0 auto;
+        @media #{$phablet} {
+            width: 75%;
+        }
+        @media #{$tablet} {
+            width: 60%;
+        }
+        @media #{$mac13} {
+            width: 40%;
+        }
+        @media #{$mac15} {
+            width: 35%;
+        }
+        @media #{$monitor} {
+            width: 25%;
+        }
+    }
+
     #wireframegroupsmall {
-        padding: 8em 0;
+        @media #{$monitor} {
+            padding: 8em 0;
+        }
 
         .wfdiv {
             width: 90%;
@@ -270,10 +743,42 @@ ul {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            padding: 4em 0;
 
-            img {
-                padding: 2em;
+            .wfdiv {
+                width: 45%;
+                padding: 1em;
+                @media #{$tablet} {
+                    width: 30%;
+                    padding: 2em;
+                }
+                @media #{$mac13} {
+                    width: 20%;
+                    padding: 2em;
+                }
+                @media #{$mac15} {
+                    width: 20%;
+                    padding: 2em;
+                }
+                @media #{$monitor} {
+                    width: 20%;
+                    padding: 2em;
+                }
+            }
+
+            .wffive {
+                display: none;
+                @media #{$tablet} {
+                    display: block;
+                }
+                @media #{$mac13} {
+                    display: block;
+                }
+                @media #{$mac15} {
+                    display: block;
+                }
+                @media #{$monitor} {
+                    display: block;
+                }
             }
         }
     }
@@ -282,27 +787,84 @@ ul {
 
 #visualcontainer {
     background-color: $grey1;
+}
+
+#visualbox {
     padding: 4em 0;
+    @media #{$monitor} {
+        width: 70%;
+        margin: 0 auto;
+    }
 
     .contentdiv {
         padding-top: 4em;
-        width: 30%;
+        width: 90%;
         margin: 0 auto;
+        @media #{$phablet} {
+            width: 75%;
+        }
+        @media #{$tablet} {
+            width: 60%;
+        }
+        @media #{$mac13} {
+            width: 50%;
+        }
+        @media #{$mac15} {
+            width: 35%;
+        }
+        @media #{$monitor} {
+            width: 35%;
+        }
     }
 
     #colorsdiv {
-        width: 60%;
+        width: 90%;
         margin: 0 auto;
-        padding: 8em 0;
+        padding: 4em 0;
+        @media #{$tablet} {
+            width: 70%;
+            padding-bottom: 8em;
+            margin: 0 auto;
+        }
+        @media #{$mac13} {
+            width: 50%;
+            margin: 0 auto;
+        }
+        @media #{$mac15} {
+            width: 608px;
+            margin: 0 auto;
+        }
+        @media #{$monitor} {
+            width: 608px;
+            margin: 0 auto;
+        }
     }
 
-    #typebuttdiv {
-        padding: 4em 0;
-        display: flex;
-        width: 75%;
+    .typobuttondiv {
+        width: 90%;
         margin: 0 auto;
-        justify-content: space-around;
-        flex-wrap: wrap;
+        padding: 4em 0;
+
+        img {
+            width: 100%;
+        }
+        @media #{$tablet} {
+            width: 70%;
+            padding-bottom: 8em;
+            margin: 0 auto;
+        }
+        @media #{$mac13} {
+            width: 50%;
+            margin: 0 auto;
+        }
+        @media #{$mac15} {
+            width: 608px;
+            margin: 0 auto;
+        }
+        @media #{$monitor} {
+            width: 608px;
+            margin: 0 auto;
+        }
     }
 }
 ////////////////////////// HIGH FIDELITY ////////////////////////
@@ -313,11 +875,26 @@ ul {
 
     .contentdiv {
         padding-top: 4em;
-        width: 30%;
+        width: 90%;
         margin: 0 auto;
 
         p {
             color: white;
+        }
+        @media #{$phablet} {
+            width: 75%;
+        }
+        @media #{$tablet} {
+            width: 60%;
+        }
+        @media #{$mac13} {
+            width: 40%;
+        }
+        @media #{$mac15} {
+            width: 35%;
+        }
+        @media #{$monitor} {
+            width: 25%;
         }
     }
 
@@ -328,42 +905,111 @@ ul {
     .hifigroupdiv {
         display: flex;
         flex-wrap: wrap;
-        width: 85%;
+        width: 100%;
         margin: 0 auto;
         justify-content: center;
 
         .hfgp {
-            padding: 2em;
+            padding: 1em;
+            @media #{$mac13} {
+                width: 50%;
+            }
         }
     }
 }
 /////////////////////////// BENEFITS ////////////////////////
 
 #benefitscontainer {
-    display: flex;
-    flex-wrap: wrap;
+    #benefitsbox {
+        @media #{$mac13} {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        @media #{$mac15} {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        @media #{$monitor} {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
 
     .colorcontentdiv {
-        padding-top: 4em;
+        padding: 4em 0;
         background-color: #FFFABC;
-        width: 50%;
+        width: 100%;
+        @media #{$mac13} {
+            width: 50%;
+        }
+        @media #{$mac15} {
+            width: 50%;
+        }
+        @media #{$monitor} {
+            width: 50%;
+            padding: 8em 0;
+        }
 
         .contentdiv {
-            padding: 10em 0;
-            width: 50%;
+            padding-top: 4em;
+            width: 90%;
             margin: 0 auto;
+            @media #{$phablet} {
+                width: 75%;
+            }
+            @media #{$tablet} {
+                width: 60%;
+            }
+            @media #{$mac13} {
+                width: 90%;
+            }
+            @media #{$mac15} {
+                width: 75%;
+            }
+            @media #{$monitor} {
+                width: 45%;
+            }
         }
     }
 
     #benefitsimagediv {
-        width: 50%;
         background-color: $grey1;
-        position: relative;
+        width: 100%;
+        padding: 4em 0;
+        @media #{$mac13} {
+            width: 50%;
+            position: relative;
+        }
+        @media #{$mac15} {
+            width: 50%;
+            position: relative;
+        }
+        @media #{$monitor} {
+            width: 50%;
+            position: relative;
+        }
 
         .nakedscreendiv {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
+            @media #{$tablet} {
+                width: 70%;
+                margin: 0 auto;
+            }
+            @media #{$mac13} {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-30%);
+            }
+            @media #{$mac15} {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-30%);
+            }
+            @media #{$monitor} {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-30%);
+                left: 10%;
+            }
         }
     }
 }
@@ -371,6 +1017,10 @@ ul {
 
 #reflectioncontainer {
     padding: 4em 0 8em;
+    @media #{$monitor} {
+        margin: 0 auto;
+        width: 90%;
+    }
 
     #reflectionflex {
         padding-top: 8em;
@@ -380,22 +1030,97 @@ ul {
     }
 
     #blackphonebox {
-        width: 50%;
+        width: 100%;
         margin: 0 auto;
+        @media #{$mac13} {
+            margin: 0 auto;
+            width: 50%;
+        }
+        @media #{$mac15} {
+            margin: 0 auto;
+            width: 50%;
+        }
+        @media #{$monitor} {
+            margin: 0 auto;
+            width: 30%;
+            // background-color: yellow;
+        }
 
         #blackphonediv {
             margin: 0 auto;
-            width: 40%;
+            width: 80%;
+
+            img {
+                width: 100%;
+            }
+            @media #{$phablet} {
+                margin: 0 auto;
+                width: 70%;
+            }
+            @media #{$tablet} {
+                margin: 0 auto;
+                width: 50%;
+            }
+            @media #{$mac13} {
+                margin: 0 auto;
+                width: 70%;
+                padding-top: 2em;
+            }
+            @media #{$mac15} {
+                margin: 0 auto;
+                width: 50%;
+                padding-top: 2em;
+            }
+            @media #{$monitor} {
+                margin: 0 auto;
+                width: 50%;
+                padding-top: 2em;
+                // background-color: red;
+            }
         }
     }
 
     .refcontentdiv {
-        width: 50%;
+        width: 100%;
+        padding-top: 4em;
+        @media #{$phablet} {
+            margin: 0 auto;
+            width: 80%;
+        }
+        @media #{$tablet} {
+            margin: 0 auto;
+            width: 60%;
+        }
+        @media #{$mac13} {
+            margin: 0 auto;
+            width: 50%;
+        }
+        @media #{$mac15} {
+            margin: 0 auto;
+            width: 35%;
+        }
+        @media #{$monitor} {
+            margin: 0 auto;
+            width: 25%;
+            // background-color: red;
+        }
     }
 
     .refcontent {
-        width: 50%;
+        width: 90%;
         margin: 0 auto;
+        @media #{$mac13} {
+            margin: 0 auto;
+            width: 75%;
+        }
+        @media #{$mac15} {
+            margin: 0 auto;
+            width: 75%;
+        }
+        @media #{$monitor} {
+            margin: 0 auto;
+            width: 75%;
+        }
     }
 }
 /////////////////////////// BEYOND ////////////////////////
@@ -411,24 +1136,86 @@ ul {
     .beyondcontentdiv {
         padding-top: 4em;
         background-color: $bgblue;
-        width: 50%;
+        width: 100%;
+        @media #{$mac13} {
+            width: 50%;
+        }
+        @media #{$mac15} {
+            width: 50%;
+        }
+        @media #{$monitor} {
+            width: 50%;
+        }
 
         .contentdiv {
-            padding: 10em 0;
-            width: 50%;
+            padding: 4em 0;
+            width: 90%;
             margin: 0 auto;
+            @media #{$phablet} {
+                width: 80%;
+            }
+            @media #{$tablet} {
+                width: 60%;
+            }
+            @media #{$mac13} {
+                width: 100%;
+                padding: 8em 0;
+            }
+            @media #{$mac15} {
+                width: 90%;
+            }
+            @media #{$monitor} {
+                width: 40%;
+            }
         }
     }
 
     #benefitsimagediv {
-        width: 50%;
+        width: 100%;
         background-color: black;
+        padding: 4em 0;
+        @media #{$mac13} {
+            width: 50%;
+        }
+        @media #{$mac15} {
+            width: 50%;
+        }
+        @media #{$monitor} {
+            width: 50%;
+        }
 
         .nakedscreendiv {
-            position: relative;
+            width: 90%;
             margin: 0 auto;
-            width: 50%;
-            top: 20%;
+            @media #{$phablet} {
+                width: 70%;
+            }
+            @media #{$tablet} {
+                padding: 6em 0;
+                width: 40%;
+            }
+            @media #{$mac13} {
+                padding: 6em 0;
+                width: 40%;
+            }
+            @media #{$mac15} {
+                padding: 6em 0;
+                width: 50%;
+            }
+            @media #{$monitor} {
+                padding: 6em 0;
+                width: 30%;
+            }
+
+            img {
+                width: 100%;
+            }
+            @media #{$mac13} {
+                position: relative;
+                margin: 0 auto;
+                width: 50%;
+                top: 20%;
+            }
         }
     }
 }

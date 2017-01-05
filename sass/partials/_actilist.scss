@@ -247,7 +247,7 @@ ul {
 
 #wireframescontainer {
     background-color: white;
-    padding: 4em 0;
+    padding: 4em 0 8em;
 
     .contentdiv {
         padding-top: 4em;
@@ -269,7 +269,7 @@ ul {
         .wfgp {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-around;
+            justify-content: center;
             padding: 4em 0;
 
             img {
@@ -330,10 +330,10 @@ ul {
         flex-wrap: wrap;
         width: 85%;
         margin: 0 auto;
-        justify-content: space-around;
+        justify-content: center;
 
         .hfgp {
-            padding: 2em 0;
+            padding: 2em;
         }
     }
 }
@@ -370,7 +370,7 @@ ul {
 /////////////////////////// REFLECTIONS ////////////////////////
 
 #reflectioncontainer {
-    padding: 4em 0;
+    padding: 4em 0 8em;
 
     #reflectionflex {
         padding-top: 8em;

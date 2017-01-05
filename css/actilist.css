@@ -189,7 +189,7 @@ ul {
 
 #wireframescontainer {
   background-color: white;
-  padding: 4em 0; }
+  padding: 4em 0 8em; }
   #wireframescontainer .contentdiv {
     padding-top: 4em;
     width: 30%;
@@ -203,7 +203,7 @@ ul {
   #wireframescontainer #wireframegroupbig .wfgp {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     padding: 4em 0; }
     #wireframescontainer #wireframegroupbig .wfgp img {
       padding: 2em; }
@@ -243,9 +243,9 @@ ul {
     flex-wrap: wrap;
     width: 85%;
     margin: 0 auto;
-    justify-content: space-around; }
+    justify-content: center; }
     #hificontainer .hifigroupdiv .hfgp {
-      padding: 2em 0; }
+      padding: 2em; }
 
 #benefitscontainer {
   display: flex;
@@ -268,7 +268,7 @@ ul {
       transform: translateY(-50%); }
 
 #reflectioncontainer {
-  padding: 4em 0; }
+  padding: 4em 0 8em; }
   #reflectioncontainer #reflectionflex {
     padding-top: 8em;
     display: flex;
